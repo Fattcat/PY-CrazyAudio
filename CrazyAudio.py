@@ -5,31 +5,33 @@ import random
 pygame.mixer.init()
 
 def QuackSound():
+    sleep(1)
     pygame.mixer.music.load("quack-sound.mp3")
     pygame.mixer.music.play()
 
-def SLEEPINGo():
-    sleep(10)
-
-def SLEEPINGtw():
-    sleep(5)
+#def LolSound():
+#    pygame.mixer.music.load("ImagineDragons-Symphony.mp")
+#    pygame.mixer.music.play()
     
-def SLEEPINGt():
-    sleep(50)
+def Boom():
+    pygame.mixer.music.load("Boom Headshot NO EFFECT.mp3")
+    pygame.mixer.music.play()
     
-def SLEEPINGfo():
-    sleep(3)
+def RickAstley():
+    pygame.mixer.music.load("Rickiovec-Astleyovec.mp3")
+    pygame.mixer.music.play()
     
-def SLEEPINGf():
-    sleep(21)
-
-lossing = [SLEEPINGo(), SLEEPINGtw(), SLEEPINGt(), SLEEPINGf(), SLEEPINGfo()]
-Lossing = random.randint(lossing)
-
-def RandomPick():
-    random.choice(lossing)
-
+def helicopter():
+    pygame.mixer.music.load("HelicopterHelicopterParakoferSound.mp3")
+    pygame.mixer.music.play()
 
 while True:
+        sleep(1)
+        helicopter()
+        sleep(16)
+        RickAstley()
+        sleep(6)
+        Boom()
+        sleep(6)
         QuackSound()
-        RandomPick()
+        sleep(6)
