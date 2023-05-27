@@ -30,7 +30,7 @@ while True:
         QuackSound()
         sleep(16)
         RickAstley()
-        sleep(6)
+        sleep(10)
         Boom()
         sleep(6)
         QuackSound()
