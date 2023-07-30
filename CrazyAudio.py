@@ -1,6 +1,5 @@
 import pygame
 from time import sleep
-import pyautogui as pg
 import random
 pygame.mixer.init()
 
@@ -9,9 +8,9 @@ def QuackSound():
     pygame.mixer.music.load("quack-sound.mp3")
     pygame.mixer.music.play()
 
-#def LolSound():
-#    pygame.mixer.music.load("ImagineDragons-Symphony.mp")
-#    pygame.mixer.music.play()
+def LolSound():
+    pygame.mixer.music.load("ImagineDragons-Symphony.mp")
+    pygame.mixer.music.play()
     
 def Boom():
     pygame.mixer.music.load("BoomHeadshotNOEFFECT.mp3")
@@ -25,8 +24,19 @@ def helicopter():
     pygame.mixer.music.load("HelicopterHelicopterParakoferSound.mp3")
     pygame.mixer.music.play()
 
+SONGZ = [
+    QuackSound(),
+    LolSound(),
+    Boom(),
+    RockAstley(),
+    helicopter()
+]
+
+Ransomizer = random.choice("SONGZ")
+
 while True:
-        sleep(1)
+    print(randomizer)
+        sleep(20)
         QuackSound()
         sleep(16)
         RickAstley()
