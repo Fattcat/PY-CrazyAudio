@@ -24,14 +24,7 @@ def helicopter():
     pygame.mixer.music.load("HelicopterHelicopterParakoferSound.mp3")
     pygame.mixer.music.play()
 
-SONGZ = [
-    QuackSound(),
-    LolSound(),
-    Boom(),
-    RockAstley(),
-    helicopter()
-]
-
+SONGZ = [QuackSound, LolSound, Boom, RickAstley, helicopter]
 Ransomizer = random.choice("SONGZ")
 
 while True:
